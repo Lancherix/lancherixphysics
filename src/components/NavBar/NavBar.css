@@ -1,0 +1,37 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(155,155,155,0.2);
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.NavBar-Top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.Link {
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: black;
+}
+
+.Link:hover {
+    color: #0074ff;
+    cursor: pointer;
+}
+
+.NavBar-Logo1 {
+    height: 2vh;
+}
+
+.NavBar-searchIcon {
+    height: 2.5vh;
+}
