@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-import logo1 from '../ArtWork/Lancherix.png';
+import logo1 from '../ArtWork/LancherixWhite.png';
 import searchIcon from '../ArtWork/search.svg';
 
 function NavBar() {
@@ -16,11 +16,11 @@ function NavBar() {
   };
 
   const handleSubMenuMouseEnter = (item) => {
-    setHoveredItem(item); // Keep the submenu open when the mouse is over it
+    setHoveredItem(item);
   };
 
   const handleSubMenuMouseLeave = () => {
-    setHoveredItem(null); // Close the submenu when the mouse leaves
+    setHoveredItem(null);
   };
 
   useEffect(() => {
