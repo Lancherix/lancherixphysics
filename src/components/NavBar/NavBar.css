@@ -1,11 +1,12 @@
 .NavBar {
     display: flex;
     flex-direction: row;
-    background-color: rgb(155,155,155,0.2);
+    background-color: rgb(155, 155, 155, 0.2);
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 .NavBar-Top {
@@ -17,13 +18,17 @@
     width: 100%;
 }
 
-.Link {
+.NavBar-button {
+    background-color: transparent;
+    border: none;
+    height: 6vh;
+    max-width: 100vw;
     font-size: 0.85rem;
     text-decoration: none;
     color: black;
 }
 
-.Link:hover {
+.NavBar-button:hover {
     color: #0074ff;
     cursor: pointer;
 }
@@ -34,4 +39,49 @@
 
 .NavBar-searchIcon {
     height: 2.5vh;
+}
+
+.NavBar-SubMenu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(155, 155, 155, 0.2);
+    padding: 20px 0;
+    z-index: 999;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.NavBar-Store:hover .NavBar-SubMenu,
+.NavBar-Physics:hover .NavBar-SubMenu,
+.NavBar-Music:hover .NavBar-SubMenu,
+.NavBar-Sports:hover .NavBar-SubMenu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.NavBar-Item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.NavBar-Item a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.NavBar-Item a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
