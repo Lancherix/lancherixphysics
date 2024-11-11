@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-import logo1 from '../ArtWork/LancherixWhite.png';
+import logo1 from '../ArtWork/Lancherix.png';
 import searchIcon from '../ArtWork/search.svg';
 
 function NavBar() {
