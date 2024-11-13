@@ -96,7 +96,7 @@ function NavBar() {
           onMouseEnter={() => handleMouseEnter('sports')}
           onMouseLeave={handleMouseLeave}
         >
-          <Link to="/" className="Link"><button className='NavBar-button'>Sports</button></Link>
+          <Link to="/sports" className="Link"><button className='NavBar-button'>Sports</button></Link>
           {hoveredItem === 'sports' && (
             <div
               className="NavBar-SubMenu"
