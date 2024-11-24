@@ -16,3 +16,7 @@ body {
     z-index: 1000;
 }
 
+.App-Foot {
+    width: 100vw;
+}
+

@@ -63,10 +63,27 @@ function NavBar() {
               onMouseEnter={() => handleSubMenuMouseEnter('physics')}
               onMouseLeave={handleSubMenuMouseLeave}
             >
+              <div className='NavBar-ItemTitle'>
+                <Link to="/physics">Physics</Link>
+              </div>
               <div className="NavBar-Item">
-                <Link to="/physics/option1">Kinematics</Link>
-                <Link to="/physics/option2">Vectors & Scalars</Link>
+                <Link to="/physics/option1">Quantities and units</Link>
+                <Link to="/physics/option2">Kinematics</Link>
                 <Link to="/physics/option3">Dynamics</Link>
+              </div>
+              <div className="NavBar-Item">
+                <Link to="/physics/option3">Forces, density and pressure</Link>
+                <Link to="/physics/option3">Work, energy and power</Link>
+                <Link to="/physics/option3">Deformation of solids</Link>
+              </div>
+              <div className="NavBar-Item">
+                <Link to="/physics/option3">Waves</Link>
+                <Link to="/physics/option3">Superposition</Link>
+                <Link to="/physics/option3">Electricity</Link>
+              </div>
+              <div className="NavBar-Item">
+                <Link to="/physics/option3">D.C. circuitsy</Link>
+                <Link to="/physics/option3">Particle physics</Link>
               </div>
             </div>
           )}

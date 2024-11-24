@@ -71,3 +71,45 @@
     cursor: pointer;
     background-color: rgb(202, 210, 216);
 }
+
+.Physics-intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Physics-introVideo {
+    width: 60%;
+    height: 70%;
+    border-radius: 20px;
+    box-shadow: 8px 10px 20px -2px rgba(0, 0, 0, 0.6);
+    background-image: url('https://i.pinimg.com/1200x/ed/fb/fe/edfbfeedaaede57f54ade84437f4c1bf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Physics-desc {
+    width: 60%;
+    padding: 0% 20% 3% 20%;
+}
+
+.Physics-desc p {
+    font-size: 1.5rem;
+}
+
+.Physics-next {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vh;
+    height: 15vh;
+}
+
+.Physics-next a {
+    font-size: 1.5rem;
+    color: #0074FF;
+}

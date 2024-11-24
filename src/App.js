@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+import Foot from './components/Foot/Foot';
 import Home from './components/Home/Home';
 import Store from './components/Store/Store';
 import Physics from './components/Physics/Physics';
@@ -21,6 +22,9 @@ function App() {
           <Route path="/physics" element={<Physics />} />
           <Route path="/sports" element={<Sports />} />
         </Routes>
+        <div className='App-Foot'>
+          <Foot />
+        </div>
       </div>
     </Router>
   );
