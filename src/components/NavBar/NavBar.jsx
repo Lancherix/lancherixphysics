@@ -67,11 +67,8 @@ function NavBar() {
                 <Link to="/physics">Physics</Link>
               </div>
               <div className="NavBar-Item">
-<<<<<<< HEAD
                 <Link to="/physics/option1">Quantities and units</Link>
-=======
                 <Link to="/physics/option1">Physical quantities and units</Link>
->>>>>>> f9a48dc9ee9c98a4a71d7f2e4c3e85b0a91226f3
                 <Link to="/physics/option2">Kinematics</Link>
                 <Link to="/physics/option3">Dynamics</Link>
                 <Link to="/physics/option3">Forces, density and pressure</Link>
